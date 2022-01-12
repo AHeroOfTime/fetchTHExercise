@@ -39,7 +39,8 @@ function sendData() {
     method: 'POST',
     headers: {
       'Accept': 'application/json, text/plain, */*',
-      // 'Content-Type': 'application/json',
+      // not sure if I need this
+      // 'Content-Type': 'application/json', 
     },
     body: JSON.stringify(formValues),
   })
