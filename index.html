@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form action="https://frontend-take-home.fetchrewards.com/form" method="POST" name="account-form"
+    class="account-form">
+    <p id="form-text">New to Fetch Rewards? Create an Account!</p>
+    <p id="form-sub-text">All inputs marked with <span class="asterisk">*</span> are required</p>
+    <label for="name">Name(First & Last)<span class="asterisk">*</span>:</label>
+    <input type="text" name="name" id="name" class="form-input" required>
+    <label for="email">Email<span class="asterisk">*</span>:</label>
+    <input type="email" name="email" id="email" class="form-input" required>
+    <label for="password">Password<span class="asterisk">*</span>:</label>
+    <input type="password" name="password" id="password" class="form-input" required>
+    <!-- fetch data to fill options below -->
+    <label for="occupation">Occupation<span class="asterisk">*</span>:</label>
+    <select name="occupation" id="occupation" class="form-input" required>
+      <!-- JS to fill options -->
+      <option value="" selected disabled hidden>Choose Your Occupation</option>
+    </select>
+    <label for="state">State<span class="asterisk">*</span>:</label>
+    <select name="state" id="state" class="form-input" required>
+      <!-- JS to fill options -->
+      <option value="" selected disabled hidden>Choose Your State</option>
+    </select>
+    <button type="submit" value="submit">Create Account</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
